@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    cursor: pointer;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    background-color: burlywood;
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-size: 2em;
+    border: 1px solid #000;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: palegoldenrod;
+   
+}
+.cell:hover{
+    color: blueviolet;
+    transition: 3s ease ;
+    font-size: 3rem;
+    background-color: palegreen;
+}
+
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    margin-top: 20px;
+    /* height: 50px;
+    width: 100px; */
+    font-size: 40px;
+    border-radius: 10px;
+    color: brown;
+    border: none;    
+    background-color: pink;
+
+}
+button:hover{
+    border: 2px solid blueviolet;
+    text-shadow: blue  ;
+    font-size: 50px;
+    transition: 2s ease ;
+    color: black;
+}
